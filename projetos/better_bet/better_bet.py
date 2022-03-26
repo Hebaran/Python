@@ -143,7 +143,7 @@ while True: # PROGRAMA
     
     print()
     
-    if userMoney <= 0: # FECHAR O PROGRAMA CASA O USUÁRIO ZERAR O SALDO
+    if userMoney <= 0: # FECHA O PROGRAMA CASO O USUÁRIO ZERE O SALDO
         print("Estamos encerrando o programa...\n")
         
         break
