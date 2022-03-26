@@ -13,7 +13,6 @@ userMoney = userMoneyInitial = 1000.00
 
 system('cls')
 
-
 while True: # PROGRAMA
     while True:
         if errors == 0:
