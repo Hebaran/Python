@@ -41,9 +41,9 @@ while True: # PROGRAMA
     
         else:
             if higherProbability == 0:
-                    higherProbability = (userMoney * 0.001) # 0.1%
+                higherProbability = (userMoney * 0.001) # 0.1%
                     
-                    print(f"\nO valor que o usuário deve apostar para aumentar suas chances de ganhar deve ser: R$ {higherProbability:.2f}")
+                print(f"\nO valor que o usuário deve apostar para aumentar suas chances de ganhar deve ser: R$ {higherProbability:.2f}")
             
             else:
                 if userMoney != 0:
