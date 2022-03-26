@@ -104,7 +104,7 @@ while True: # PROGRAMA
         
         break
 
-    while True: # ESCOLHA DO VENCEDOR
+    while True: # ESCOLHA DO NÚMERO VENCEDOR
         num = randint(0, 1)
         
         print(f"\nO número sorteado foi: {num}")
@@ -143,7 +143,7 @@ while True: # PROGRAMA
     
     print()
     
-    if userMoney <= 0: # FECHA O PROGRAMA CASO O USUÁRIO ZERE O SALDO
+    if userMoney <= 0: # FECHA O PROGRAMA CASO O USUÁRIO TENHA SEU SALDO ZERADO
         print("Estamos encerrando o programa...\n")
         
         break
