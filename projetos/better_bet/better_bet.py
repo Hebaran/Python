@@ -3,11 +3,7 @@ from os import system
 
 permissionList = [0, 1]
 higherProbabilityList = []
-higherProbability = 0
-count = 0
-totalWins = 0
-totalDefeats = 0
-errors = 0
+higherProbability = count = totalWins = totalDefeats = errors = 0
 
 exitVerify_YesNot = ["SIM", "S", "YES", "Y" "NÃO", "NAO", "N", "Ñ", "NO", "NOT"]
 exitVerifyYes = ["SIM", "S", "YES", "Y"]
