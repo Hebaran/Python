@@ -5,9 +5,9 @@ permissionList = [0, 1]
 higherProbabilityList = []
 higherProbability = count = totalWins = totalDefeats = errors = 0
 
-exitVerify_YesNot = ["SIM", "S", "YES", "Y" "NÃO", "NAO", "N", "Ñ", "NO", "NOT"]
 exitVerifyYes = ["SIM", "S", "YES", "Y"]
 exitVerifyNot = ["NÃO", "NAO", "N", "Ñ", "NO", "NOT"]
+exitVerify_YesNot = exitVerifyYes + exitVerifyNot
 
 userMoney = userMoneyInitial = 1000.00
 
