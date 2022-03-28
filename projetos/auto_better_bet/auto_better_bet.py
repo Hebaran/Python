@@ -21,11 +21,7 @@ global bet, userProfits, totalGames
 userNumber = randint(0, 1)
 permissionList = [0, 1]
 higherProbabilityList = []
-higherProbability = count = totalWins = totalDefeats = totalLossesInaRow = 0
-
-exitVerifyYes = ["SIM", "S", "YES", "Y"]
-exitVerifyNot = ["NÃO", "NAO", "N", "Ñ", "NO", "NOT"]
-exitVerify_YesNot = exitVerifyYes + exitVerifyNot
+higherProbability = totalWins = totalDefeats = totalLossesInaRow = count = 0
 
 while True:
     try:
@@ -70,20 +66,15 @@ try:
                     if userMoney != 0:
                         print(f"\nO valor que o usuário deve apostar para aumentar suas chances de ganhar deve ser: \033[33mR$ {zero_number_left(higherProbability)}\033[m")
 
-            recommendedBet = 'S'
+            if higherProbability > userMoney:
+                print("\n[ERRO 004] Opção inválida, seu valor atual é menor do que o valor recomendado.\n")
 
-            if recommendedBet in exitVerifyYes:
-                if higherProbability > userMoney:
-                    print("\n[ERRO 004] Opção inválida, seu valor atual é menor do que o valor recomendado.\n")
+                if True:
+                    bet = userMoney
 
-                    allInConfirmation = 'S'
-
-                    if allInConfirmation in exitVerifyYes:
-                        bet = userMoney
-
-                else:
-                    bet = higherProbability
-                    higherProbabilityList.append(bet)
+            else:
+                bet = higherProbability
+                higherProbabilityList.append(bet)
 
             break
 
