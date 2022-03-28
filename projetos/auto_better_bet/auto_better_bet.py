@@ -93,7 +93,7 @@ try:
                 higherProbabilityList.clear()
                 higherProbability = 0
 
-                if userMoney >= maximumMoneyReached:
+                if userMoney > maximumMoneyReached:
                     maximumMoneyReached = userMoney
 
                 print(f"\nParabéns, você ganhou!")
