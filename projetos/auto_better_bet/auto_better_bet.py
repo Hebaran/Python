@@ -135,8 +135,6 @@ try:
 
             break
 
-        exitScript = 'S'
-
         system('cls')
 
     userProfits = userMoney - userMoneyInitial
