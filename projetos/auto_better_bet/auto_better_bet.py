@@ -21,7 +21,7 @@ global bet, userProfits, totalGames
 userNumber = randint(0, 1)
 permissionList = [0, 1]
 higherProbabilityList = []
-higherProbability = count = totalWins = totalDefeats = errors = totalLossesInaRow = 0
+higherProbability = count = totalWins = totalDefeats = totalLossesInaRow = 0
 
 exitVerifyYes = ["SIM", "S", "YES", "Y"]
 exitVerifyNot = ["NÃO", "NAO", "N", "Ñ", "NO", "NOT"]
@@ -50,7 +50,7 @@ system('cls')
 
 try:
     while True: # PROGRAMA
-        if errors == 0:
+        if True:
             print(f"Seu saldo atual é:      \033[32mR$ {zero_number_left(userMoney)}\033[m\n")
 
         while True:
@@ -98,7 +98,6 @@ try:
                 userMoney += bet
                 totalWins += 1
                 totalLossesInaRow = 0
-                errors = 0
 
                 higherProbabilityList.clear()
                 higherProbability = 0
@@ -122,7 +121,6 @@ try:
                 higherProbability = 0
                 totalDefeats += 1
                 totalLossesInaRow += 1
-                errors = 0
 
                 print(f"\nQuer azar, não foi dessa vez.")
                 print(f"O valor perdido foi de: \033[31mR$ {zero_number_left(bet)}\033[m")
