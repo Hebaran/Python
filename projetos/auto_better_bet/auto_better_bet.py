@@ -167,7 +167,7 @@ finally:
     print(f"SEU LUCRO TOTAL FOI:         R$ {zero_number_left(userProfits)}")
     
     if userMoney <= 0:
-        print(f"SALDO MÁXIMO FOI ALCANÇADO:  R$ {zero_number_left(maximumMoneyReached)}")
+        print(f"SALDO MÁXIMO ALCANÇADO FOI:  R$ {zero_number_left(maximumMoneyReached)}")
     
     print()
     
